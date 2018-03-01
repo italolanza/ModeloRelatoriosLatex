@@ -1,0 +1,141 @@
+\documentclass[a4paper, 14pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage[top = 3cm, right = 3cm, left = 2cm, bottom = 2cm]{geometry}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{indentfirst}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{pdfpages}
+\usepackage{hhline}
+\usepackage{blindtext}
+
+\graphicspath{{figuras/}} %define onde procurar as imagens
+
+
+\title{Relatório - Experimento X}					% Title
+\author{Autor 1\\ Autor 2\\Autor 3\\Autor 4}		% Author
+\date{\today}										% Date
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\thetitle}
+\cfoot{\thepage}
+
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%% Início da Capa %%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{titlepage}
+	\centering
+    \vspace*{0 cm}
+    \includegraphics[scale = 0.3]{logo_ufabc.png}\\[1.0 cm]	% University Logo
+    \textsc{\LARGE Universidade Federal do ABC}\\[2.0 cm]	% University Name
+	\textsc{\Large Número da Disciplina}\\[0.5 cm]				% Course Code
+	\textsc{\large Nome da disciplína}\\[0.5 cm]				% Course Name
+	\rule{\linewidth}{0.2 mm} \\[0.4 cm]
+	{ \huge \bfseries \thetitle}\\
+	\rule{\linewidth}{0.2 mm} \\[1.5 cm]
+	
+	\begin{minipage}{0.4\textwidth}
+		\begin{flushleft} \large
+			\emph{Alunos: }\\
+			\theauthor
+			\end{flushleft}
+			\end{minipage}~
+			\begin{minipage}{0.4\textwidth}
+			\begin{flushright} \large
+			\emph{R.A.:} \\
+			RA1 \\ RA2\\ RA3\\ RA4									% Your Student Number
+		\end{flushright}
+	\end{minipage}\\[2 cm]
+	
+	{\large \thedate}\\[2 cm]
+ 
+	\vfill	
+\end{titlepage}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%% Início do Resumo %%%%%%%%%%%%%%%%%%%%%%%
+
+\thispagestyle{empty}
+\begin{abstract}
+
+\blindtext %texto enche linguiça
+
+\end{abstract}
+\pagebreak
+
+
+%%%%%%%%%%%%%%%%%%%% Início do Sumário %%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents
+\thispagestyle{empty}
+\pagebreak
+
+
+
+%%%%%%%%%%%%%%%%%%%% Início: Introdução %%%%%%%%%%%%%%%%%%%%%%%
+\section{Introdução}
+\blindtext %texto enche linguiça
+
+
+\pagebreak
+%%%%%%%%%%%%%%%%%%%% Início: Objetivo %%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Objetivos}
+\blindtext %texto enche linguiça
+
+\pagebreak
+%%%%%%%%%%%%%%%% Início: Materiais utilizados %%%%%%%%%%%%%%%%%%%%%%%
+\section{Materiais utilizados}
+\blindtext %texto enche linguiça
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%% Início: Metodologia %%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Metodologia}
+\blindtext %texto enche linguiça
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%% Início: Resultados %%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Resultados e discussões}
+\blindtext %texto enche linguiça
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%% Início: Conclusão %%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusão}
+\blindtext %texto enche linguiça
+
+\pagebreak
+
+
+\newpage
+%\nocite{*} %para citar todas as referências no arquivo de referências
+\bibliographystyle{plain}
+\bibliography{referencias}
+
+\pagebreak
+
+%\appendix %anexos (opicional)
+
+
+
+\end{document}
